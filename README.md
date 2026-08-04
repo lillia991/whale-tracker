@@ -2,6 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
 ![Etherscan](https://img.shields.io/badge/Etherscan-API-lightblue)
+![Flask](https://img.shields.io/badge/Flask-3.x-lightgrey?logo=flask)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 Real-time Ethereum whale transaction monitor with Telegram alerts, web dashboard, address filter, and sound notifications.
@@ -10,7 +11,7 @@ Real-time Ethereum whale transaction monitor with Telegram alerts, web dashboard
 
 - Colored terminal output — 🔴 Mega (≥1000 ETH) / 🟡 Large (≥500 ETH) / 🔵 Whale (≥100 ETH)
 - CSV logging of every transaction
-- Session statistics on exit (win rate, volume, top 3)
+- Session statistics on exit (total volume, top 3, biggest/smallest)
 - Telegram bot alerts straight to your phone
 - Watch specific wallet addresses (`--watch`)
 - Sound alert on new whale detection
@@ -87,7 +88,7 @@ python tracker.py --web --sound --min-eth 100 --tg-token TOKEN --tg-chat ID --wa
   Telegram  : ✅
   Web UI    : ✅ http://localhost:5050
 
-🔴🐋 ═══════════════════════════════════════════════════════
+🔴🐋 ═══════════════════════════════════════════════════
    Time:    2024-01-15 14:23:11
    Block:   19023441
    Amount:  1,250.00 ETH
